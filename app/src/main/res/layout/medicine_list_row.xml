@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="150dp"
     android:layout_marginBottom="8dp"
     android:layout_marginRight="8dp"
     android:background="@drawable/border1"
@@ -58,7 +58,7 @@
     <EditText
         android:id="@+id/quantity"
         android:layout_width="257dp"
-        android:layout_height="51dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
@@ -73,8 +73,8 @@
 
     <TextView
         android:id="@+id/store_name"
-        android:layout_width="142dp"
-        android:layout_height="23dp"
+        android:layout_width="257dp"
+        android:layout_height="31dp"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"

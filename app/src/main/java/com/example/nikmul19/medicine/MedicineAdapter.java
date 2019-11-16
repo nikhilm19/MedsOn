@@ -51,15 +51,13 @@ public class MedicineAdapter  extends RecyclerView.Adapter<MedicineAdapter.MyVie
 
         public MyViewHolder(View view){
             super(view);
+
             name=view.findViewById(R.id.medicine_name);
             price=view.findViewById(R.id.medicine_price);
             qty=view.findViewById(R.id.quantity);
             btn = view.findViewById(R.id.add_to_cart);
             storeName=view.findViewById(R.id.store_name);
             //quantity_val=qty.getText().toString();
-
-
-
 
         }
 
@@ -80,6 +78,8 @@ public class MedicineAdapter  extends RecyclerView.Adapter<MedicineAdapter.MyVie
     public void onBindViewHolder(MyViewHolder holder, int position) {
         final  Medicine medicine= medicineList.get(position);
         holder.name.setText(medicine.getName());
+
+
 
         holder.qty.addTextChangedListener(new TextWatcher() {
 

@@ -222,10 +222,6 @@ public class DrawerActivity extends AppCompatActivity {
 
 
 
-                    case R.id.search_stores:
-                        Intent storeIntent = new Intent(DrawerActivity.this,MapsActivity.class);
-                        startActivity(storeIntent);
-                        break;
 
 
 
@@ -249,13 +245,7 @@ public class DrawerActivity extends AppCompatActivity {
 
                         break;
 
-                    case R.id.feedback_provide:
 
-                        break;
-
-                    case R.id.offers:
-                        drawerLayout.closeDrawers();
-                        break;
 
                     case R.id.drawer_home:
                         DrawerHomeFragment homeFragment= new DrawerHomeFragment();

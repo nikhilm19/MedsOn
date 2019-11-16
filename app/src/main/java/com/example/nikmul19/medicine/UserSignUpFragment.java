@@ -120,8 +120,17 @@ public class UserSignUpFragment extends Fragment implements View.OnClickListener
         errorText.setVisibility(View.INVISIBLE);
         boolean error=false;
 
+        Log.i("test-vals",email+ " 1 "+ name);
+
         if (TextUtils.isEmpty(email)) {
+
+            Log.i("test","emopty-email");
             Toast.makeText(getActivity(), "Enter email address!", Toast.LENGTH_SHORT).show();
+            error=true;
+        }
+
+        if(TextUtils.isEmpty(this.age.getText().toString())){
+            Toast.makeText(getActivity(), "Enter age!", Toast.LENGTH_SHORT).show();
             error=true;
         }
 
@@ -278,10 +287,14 @@ public class UserSignUpFragment extends Fragment implements View.OnClickListener
         switch (id) {
             case R.id.create_account:
                 showProgress();
-                Log.i("test", email.getText().toString() + " " + password.getText().toString());
-                if(age.getText().toString().length()==0)errorText.setText("please fill details");
-                else{
+                Log.i("test", email.getText().toString() + "1" + password.getText().toString()+"1");
+
+                if(!age.getText().toString().equals("")) {
                     createAccount();
+                }
+                else{
+                    hideProgress();
+                    Toast.makeText(getActivity(),"Please enter details",Toast.LENGTH_LONG).show();
                 }
                 break;
 

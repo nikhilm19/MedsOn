@@ -11,9 +11,6 @@
 
     <group >
         <item
-            android:id="@+id/search_stores"
-            android:title="Search Stores" />
-        <item
 
             android:id="@+id/medicine_buy"
             android:title="Buy Medicine" />
@@ -27,16 +24,8 @@
     </group>
     <group>
 
-        <item
-            android:id="@+id/offers"
-            android:title="Offers" />
-
     </group>
-    <group>
-        <item
-            android:id="@+id/feedback_provide"
-            android:title="provide feedback" />
-    </group>
+    <group></group>
     <group>
         <item
             android:id="@+id/logout_menu"

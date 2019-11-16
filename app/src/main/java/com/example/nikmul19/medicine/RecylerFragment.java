@@ -123,6 +123,11 @@ public class RecylerFragment extends Fragment {
 
     public void addMedicines(){
 
+
+
+
+
+
         Medicine medicine;
         db= FirebaseDatabase.getInstance().getReference().child("medicines");
         db.addListenerForSingleValueEvent(new ValueEventListener() {

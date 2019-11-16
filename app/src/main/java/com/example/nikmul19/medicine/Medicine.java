@@ -51,16 +51,7 @@ public class Medicine {
 
     }
 
-    /*Medicine( String form, String manufacturer, String medicine_id, String name, String packageForm, int price, String size, int units){
-        this.form=form;
-        this.medicine_id=medicine_id;
-        this.manufacturer=manufacturer;
-        this.name=name;
-        this.packageForm=packageForm;
-        this.price=price;
-        this.units=units;
 
-    }*/
     public void putData(){
 
             System.out.println(name);
